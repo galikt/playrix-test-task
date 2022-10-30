@@ -1,0 +1,1635 @@
+<?xml version="1.0"?>
+<asset assetType="scene">
+	<!--vso: 4-->
+	<object name="Object">
+		<!--fixes: 3-->
+		<!--physics: 1-->
+		<!--vso: 40-->
+		<root name="root">
+			<behaviours type="screenBoard">
+				<ptr isAutoUpdatable="true" refferenceH="750" refferenceW="1334">
+					<uid entityId="1485381368" />
+				</ptr>
+			</behaviours>
+			<behaviours type="input">
+				<ptr>
+					<uid entityId="543877902" />
+				</ptr>
+			</behaviours>
+			<behaviours type="layout">
+				<ptr>
+					<uid entityId="1049723326" />
+				</ptr>
+			</behaviours>
+			<children name="Background">
+				<behaviours type="anchoredElement">
+					<ptr>
+						<anchorTarget path="1485381368" />
+						<horizontalAnchor nrp_1="0.5" offset_1="-667.0" offset_2="1334.0" />
+						<uid entityId="2525018694" />
+						<verticalAnchor nrp_1="0.5" offset_1="-375.0" offset_2="750.0" />
+					</ptr>
+				</behaviours>
+				<component type="image">
+					<ptr fitPolicy="Stretch">
+						<spriteOrTexture id="UI_ScoreBackground" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+						<uid entityId="1940867518" />
+					</ptr>
+				</component>
+				<transform>
+					<position x="0.5" y="0.5" z="0.0" />
+				</transform>
+				<uid entityId="3367276702" />
+			</children>
+			<children name="WindowScore">
+				<behaviours type="anchoredElement">
+					<ptr>
+						<anchorTarget path="1485381368" />
+						<horizontalAnchor nrp_1="0.5" offset_1="-50.0" offset_2="100.0" />
+						<normalizedPivot x="0.5" y="0.5" />
+						<uid entityId="1779827588" />
+						<verticalAnchor nrp_1="0.5" offset_1="-79.2784" offset_2="100.0" />
+					</ptr>
+				</behaviours>
+				<children name="Background">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="1779827588" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-358.5" offset_2="717.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="1041725130" />
+							<verticalAnchor nrp_1="0.5" offset_1="-260.768" offset_2="579.0" />
+						</ptr>
+					</behaviours>
+					<component type="image">
+						<ptr fitPolicy="Stretch">
+							<spriteOrTexture id="UI_WindowBackground" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+							<uid entityId="3160852430" />
+						</ptr>
+					</component>
+					<transform>
+						<position x="0.0" y="28.7323" z="0.0" />
+					</transform>
+					<uid entityId="3015151018" />
+				</children>
+				<children name="Scroll">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="1779827588" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-320.0" offset_2="640.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="2428179130" />
+							<verticalAnchor nrp_1="0.5" offset_1="-149.5" offset_2="353.0" />
+						</ptr>
+					</behaviours>
+					<behaviours type="uIScissorRect">
+						<ptr scissorEnabled="true">
+							<uid entityId="3365597638" />
+						</ptr>
+					</behaviours>
+					<behaviours type="scroller">
+						<ptr containerCenterize="LeftMiddle">
+							<target path="3002386437" />
+							<uid entityId="3325854186" />
+						</ptr>
+					</behaviours>
+					<children name="Layout">
+						<behaviours type="anchoredElement">
+							<ptr autoAttachToParent="true">
+								<anchorTarget path="2428179130" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-320.0" offset_2="100.0" />
+								<normalizedPivot x="0.0" y="0.5" />
+								<uid entityId="2508885242" />
+								<verticalAnchor nrp_1="0.5" offset_1="-50.0" offset_2="100.0" />
+							</ptr>
+						</behaviours>
+						<behaviours type="axisAlignedLayoutGroup">
+							<ptr autoAttachToParent="true" horizontalPolicy="AutoRectPreferredSize" isAutoUpdatable="true" spaceBetweenElements="15.0">
+								<anchorTarget path="2428179130" />
+								<borderRect xEnd="10.0" xStart="10.0" yEnd="0.0" yStart="0.0" />
+								<horizontalAnchor offset_1="734.5" />
+								<normalizedPivot x="0.0" y="0.5" />
+								<uid entityId="3002386437" />
+								<verticalAnchor offset_1="176.5" />
+							</ptr>
+						</behaviours>
+						<children name="Score1">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2508885242" />
+									<horizontalAnchor nrp_1="0.5" offset_1="-40.0" offset_2="255.0" />
+									<normalizedPivot x="0.0" y="0.5" />
+									<uid entityId="1983146462" />
+									<verticalAnchor nrp_1="0.5" offset_1="-170.0" offset_2="340.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="simpleLayoutElement">
+								<ptr isAutoUpdatable="true">
+									<horizontalSize minSize="229.0" prefferedSize="229.0" />
+									<uid entityId="3873257199" />
+								</ptr>
+							</behaviours>
+							<children name="LabelName">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1983146462" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2810999582" />
+										<verticalAnchor nrp_1="0.5" offset_1="123.0" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="Christopher" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#894533FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="24.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="3535750439" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="138.0" z="0.0" />
+								</transform>
+								<uid entityId="1893001692" />
+							</children>
+							<children name="LabelLevel">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1983146462" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="3039062505" />
+										<verticalAnchor nrp_1="0.5" offset_1="96.2499" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="42 level" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#CC603AFF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="21.0" />
+										</fontStyle>
+										<uid entityId="405305849" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="111.25" z="0.0" />
+								</transform>
+								<uid entityId="3214787029" />
+							</children>
+							<children name="Emblem">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="1983146462" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-57.0" offset_2="114.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2005768174" />
+										<verticalAnchor nrp_1="0.5" offset_1="-45.5768" offset_2="120.0" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr fitPolicy="Stretch">
+										<spriteOrTexture id="UI_Hammer" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="1303539665" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="14.4232" z="0.0" />
+								</transform>
+								<uid entityId="1106540054" />
+							</children>
+							<children name="LabelScore">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1983146462" />
+										<horizontalAnchor nrp_1="0.5" offset_1="16.5" offset_2="85.0" />
+										<normalizedPivot x="0.0" y="0.5" />
+										<uid entityId="1938772287" />
+										<verticalAnchor nrp_1="0.5" offset_1="-63.235" offset_2="55.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr align="LeftMiddle" sfs="true" text="x5" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#FEEB16FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="42.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="2761472140" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="144.0" y="-35.735" z="0.0" />
+								</transform>
+								<uid entityId="1614373048" />
+							</children>
+							<children name="Button">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1983146462" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.5" offset_2="171.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="367584192" />
+										<verticalAnchor nrp_1="0.5" offset_1="-141.352" offset_2="63.0" />
+									</ptr>
+								</behaviours>
+								<behaviours type="button">
+									<ptr>
+										<uid entityId="2766854400" />
+									</ptr>
+								</behaviours>
+								<behaviours type="buttonStateGraph">
+									<ptr>
+										<uid entityId="1965851460" />
+									</ptr>
+								</behaviours>
+								<behaviours type="stateGraph">
+									<ptr>
+										<nodeReferences first="">
+											<second path="4180025166" />
+										</nodeReferences>
+										<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+										<uid entityId="1510296196" />
+									</ptr>
+								</behaviours>
+								<behaviours type="animation">
+									<ptr startMode="Manual">
+										<remoteNodeLocator />
+										<uid entityId="3609362850" />
+									</ptr>
+								</behaviours>
+								<children name="Text">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="367584192" />
+											<horizontalAnchor nrp_2="1.0" offset_1="13.0" offset_2="-25.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="4218865807" />
+											<verticalAnchor nrp_2="1.0" offset_1="18.6553" offset_2="-22.9" />
+										</ptr>
+									</behaviours>
+									<component type="label">
+										<ptr sfs="true" text="Send" textOverflowPolicy="NoBreak">
+											<curve />
+											<fontStyle>
+												<asset fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="30.0">
+													<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+													<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												</asset>
+											</fontStyle>
+											<uid entityId="3410944008" />
+										</ptr>
+									</component>
+									<transform>
+										<position x="0.5" y="7.20532" z="0.0" />
+									</transform>
+									<uid entityId="970602717" />
+								</children>
+								<component type="image9Slice">
+									<ptr fitPolicy="Stretch" xSliceLeft="0.49" xSliceRight="0.51" ySliceLeft="0.49" ySliceRight="0.51">
+										<texture id="UI_ButtonSend" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+										<uid entityId="4122700035" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="-109.852" z="0.0" />
+								</transform>
+								<uid entityId="4180025166" />
+							</children>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_Panel" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="1629204291" />
+								</ptr>
+							</component>
+							<transform>
+								<position x="10.0" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="756138880" />
+						</children>
+						<children name="Score2">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2508885242" />
+									<horizontalAnchor nrp_1="0.5" offset_1="204.0" offset_2="255.0" />
+									<normalizedPivot x="0.0" y="0.5" />
+									<uid entityId="3551014961" />
+									<verticalAnchor nrp_1="0.5" offset_1="-170.0" offset_2="340.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="simpleLayoutElement">
+								<ptr isAutoUpdatable="true">
+									<horizontalSize minSize="229.0" prefferedSize="229.0" />
+									<uid entityId="3830938799" />
+								</ptr>
+							</behaviours>
+							<children name="LabelName">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="3551014961" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2553732102" />
+										<verticalAnchor nrp_1="0.5" offset_1="123.0" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="Shawn Andersson" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#894533FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="24.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="312599813" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="138.0" z="0.0" />
+								</transform>
+								<uid entityId="672452305" />
+							</children>
+							<children name="LabelLevel">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="3551014961" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2409725552" />
+										<verticalAnchor nrp_1="0.5" offset_1="96.2499" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="57 level" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#CC603AFF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="21.0" />
+										</fontStyle>
+										<uid entityId="269678074" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="111.25" z="0.0" />
+								</transform>
+								<uid entityId="2403390936" />
+							</children>
+							<children name="Emblem">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="3551014961" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-57.0" offset_2="114.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2812310686" />
+										<verticalAnchor nrp_1="0.5" offset_1="-45.5768" offset_2="120.0" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr fitPolicy="Stretch">
+										<spriteOrTexture id="UI_Ball" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="3858777002" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="14.4232" z="0.0" />
+								</transform>
+								<uid entityId="388296084" />
+							</children>
+							<children name="LabelScore">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="3551014961" />
+										<horizontalAnchor nrp_1="0.5" offset_1="16.5" offset_2="85.0" />
+										<normalizedPivot x="0.0" y="0.5" />
+										<uid entityId="1631607166" />
+										<verticalAnchor nrp_1="0.5" offset_1="-63.235" offset_2="55.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr align="LeftMiddle" sfs="true" text="x55" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#FEEB16FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="42.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="117782168" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="144.0" y="-35.735" z="0.0" />
+								</transform>
+								<uid entityId="591893601" />
+							</children>
+							<children name="Button">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="3551014961" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.5" offset_2="171.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="1160172539" />
+										<verticalAnchor nrp_1="0.5" offset_1="-141.352" offset_2="63.0" />
+									</ptr>
+								</behaviours>
+								<behaviours type="button">
+									<ptr>
+										<uid entityId="4181579763" />
+									</ptr>
+								</behaviours>
+								<behaviours type="buttonStateGraph">
+									<ptr>
+										<uid entityId="973147420" />
+									</ptr>
+								</behaviours>
+								<behaviours type="stateGraph">
+									<ptr>
+										<nodeReferences first="">
+											<second path="1774641290" />
+										</nodeReferences>
+										<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+										<uid entityId="2342310131" />
+									</ptr>
+								</behaviours>
+								<behaviours type="animation">
+									<ptr startMode="Manual">
+										<remoteNodeLocator />
+										<uid entityId="1466323017" />
+									</ptr>
+								</behaviours>
+								<children name="Text">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="1160172539" />
+											<horizontalAnchor nrp_2="1.0" offset_1="13.0" offset_2="-25.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="3106633729" />
+											<verticalAnchor nrp_2="1.0" offset_1="18.6553" offset_2="-22.9" />
+										</ptr>
+									</behaviours>
+									<component type="label">
+										<ptr sfs="true" text="Send" textOverflowPolicy="NoBreak">
+											<curve />
+											<fontStyle>
+												<asset fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="30.0">
+													<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+													<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												</asset>
+											</fontStyle>
+											<uid entityId="628546084" />
+										</ptr>
+									</component>
+									<transform>
+										<position x="0.5" y="7.20532" z="0.0" />
+									</transform>
+									<uid entityId="278584489" />
+								</children>
+								<component type="image9Slice">
+									<ptr fitPolicy="Stretch" xSliceLeft="0.49" xSliceRight="0.51" ySliceLeft="0.49" ySliceRight="0.51">
+										<texture id="UI_ButtonSend" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+										<uid entityId="4063513905" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="-109.852" z="0.0" />
+								</transform>
+								<uid entityId="1774641290" />
+							</children>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_Panel" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="3013968516" />
+								</ptr>
+							</component>
+							<transform>
+								<position x="254.0" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="168961841" />
+						</children>
+						<children name="Score3">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2508885242" />
+									<horizontalAnchor nrp_1="0.5" offset_1="448.0" offset_2="255.0" />
+									<normalizedPivot x="0.0" y="0.5" />
+									<uid entityId="136123157" />
+									<verticalAnchor nrp_1="0.5" offset_1="-170.0" offset_2="340.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="simpleLayoutElement">
+								<ptr isAutoUpdatable="true">
+									<horizontalSize minSize="229.0" prefferedSize="229.0" />
+									<uid entityId="4046042793" />
+								</ptr>
+							</behaviours>
+							<children name="LabelName">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="136123157" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="1953332160" />
+										<verticalAnchor nrp_1="0.5" offset_1="123.0" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="Pilot" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#894533FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="24.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="2713245700" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="138.0" z="0.0" />
+								</transform>
+								<uid entityId="1077028748" />
+							</children>
+							<children name="LabelLevel">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="136123157" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="136962902" />
+										<verticalAnchor nrp_1="0.5" offset_1="96.2499" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="111 level" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#CC603AFF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="21.0" />
+										</fontStyle>
+										<uid entityId="3266285844" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="111.25" z="0.0" />
+								</transform>
+								<uid entityId="2044209366" />
+							</children>
+							<children name="Emblem">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="136123157" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-57.0" offset_2="114.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="4178743644" />
+										<verticalAnchor nrp_1="0.5" offset_1="-45.5768" offset_2="120.0" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr fitPolicy="Stretch">
+										<spriteOrTexture id="UI_Planes" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="1890930119" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="14.4232" z="0.0" />
+								</transform>
+								<uid entityId="1300789142" />
+							</children>
+							<children name="LabelScore">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="136123157" />
+										<horizontalAnchor nrp_1="0.5" offset_1="16.5" offset_2="85.0" />
+										<normalizedPivot x="0.0" y="0.5" />
+										<uid entityId="789305990" />
+										<verticalAnchor nrp_1="0.5" offset_1="-63.235" offset_2="55.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr align="LeftMiddle" sfs="true" text="x3" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#FEEB16FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="42.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="2614223405" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="144.0" y="-35.735" z="0.0" />
+								</transform>
+								<uid entityId="1301785306" />
+							</children>
+							<children name="Button">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="136123157" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.5" offset_2="171.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="3022333707" />
+										<verticalAnchor nrp_1="0.5" offset_1="-141.352" offset_2="63.0" />
+									</ptr>
+								</behaviours>
+								<behaviours type="button">
+									<ptr>
+										<uid entityId="2075089952" />
+									</ptr>
+								</behaviours>
+								<behaviours type="buttonStateGraph">
+									<ptr>
+										<uid entityId="330539646" />
+									</ptr>
+								</behaviours>
+								<behaviours type="stateGraph">
+									<ptr>
+										<nodeReferences first="">
+											<second path="653632786" />
+										</nodeReferences>
+										<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+										<uid entityId="2513509327" />
+									</ptr>
+								</behaviours>
+								<behaviours type="animation">
+									<ptr startMode="Manual">
+										<remoteNodeLocator />
+										<uid entityId="2612951066" />
+									</ptr>
+								</behaviours>
+								<children name="Text">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="3022333707" />
+											<horizontalAnchor nrp_2="1.0" offset_1="13.0" offset_2="-25.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="2296462973" />
+											<verticalAnchor nrp_2="1.0" offset_1="18.6553" offset_2="-22.9" />
+										</ptr>
+									</behaviours>
+									<component type="label">
+										<ptr sfs="true" text="Send" textOverflowPolicy="NoBreak">
+											<curve />
+											<fontStyle>
+												<asset fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="30.0">
+													<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+													<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												</asset>
+											</fontStyle>
+											<uid entityId="163277515" />
+										</ptr>
+									</component>
+									<transform>
+										<position x="0.5" y="7.20532" z="0.0" />
+									</transform>
+									<uid entityId="2293746118" />
+								</children>
+								<component type="image9Slice">
+									<ptr fitPolicy="Stretch" xSliceLeft="0.49" xSliceRight="0.51" ySliceLeft="0.49" ySliceRight="0.51">
+										<texture id="UI_ButtonSend" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+										<uid entityId="1820169097" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="-109.852" z="0.0" />
+								</transform>
+								<uid entityId="653632786" />
+							</children>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_Panel" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="37925268" />
+								</ptr>
+							</component>
+							<transform>
+								<position x="498.0" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="3873347558" />
+						</children>
+						<children name="Score4">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2508885242" />
+									<horizontalAnchor nrp_1="0.5" offset_1="692.0" offset_2="255.0" />
+									<normalizedPivot x="0.0" y="0.5" />
+									<uid entityId="1432033735" />
+									<verticalAnchor nrp_1="0.5" offset_1="-170.0" offset_2="340.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="simpleLayoutElement">
+								<ptr isAutoUpdatable="true">
+									<horizontalSize minSize="229.0" prefferedSize="229.0" />
+									<uid entityId="2595427831" />
+								</ptr>
+							</behaviours>
+							<children name="LabelName">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1432033735" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="3194987397" />
+										<verticalAnchor nrp_1="0.5" offset_1="123.0" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="Christopher" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#894533FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="24.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="3534493394" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="138.0" z="0.0" />
+								</transform>
+								<uid entityId="3776711745" />
+							</children>
+							<children name="LabelLevel">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1432033735" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="3845107282" />
+										<verticalAnchor nrp_1="0.5" offset_1="96.2499" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="42 level" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#CC603AFF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="21.0" />
+										</fontStyle>
+										<uid entityId="3602360246" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="111.25" z="0.0" />
+								</transform>
+								<uid entityId="3146968352" />
+							</children>
+							<children name="Emblem">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="1432033735" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-57.0" offset_2="114.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="349840969" />
+										<verticalAnchor nrp_1="0.5" offset_1="-45.5768" offset_2="120.0" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr fitPolicy="Stretch">
+										<spriteOrTexture id="UI_Hammer" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="3684147401" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="14.4232" z="0.0" />
+								</transform>
+								<uid entityId="2906205354" />
+							</children>
+							<children name="LabelScore">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1432033735" />
+										<horizontalAnchor nrp_1="0.5" offset_1="16.5" offset_2="85.0" />
+										<normalizedPivot x="0.0" y="0.5" />
+										<uid entityId="3615817166" />
+										<verticalAnchor nrp_1="0.5" offset_1="-63.235" offset_2="55.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr align="LeftMiddle" sfs="true" text="x5" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#FEEB16FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="42.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="2331848669" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="144.0" y="-35.735" z="0.0" />
+								</transform>
+								<uid entityId="2700407162" />
+							</children>
+							<children name="Button">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1432033735" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.5" offset_2="171.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="1470126377" />
+										<verticalAnchor nrp_1="0.5" offset_1="-141.352" offset_2="63.0" />
+									</ptr>
+								</behaviours>
+								<behaviours type="button">
+									<ptr>
+										<uid entityId="51167210" />
+									</ptr>
+								</behaviours>
+								<behaviours type="buttonStateGraph">
+									<ptr>
+										<uid entityId="668807784" />
+									</ptr>
+								</behaviours>
+								<behaviours type="stateGraph">
+									<ptr>
+										<nodeReferences first="">
+											<second path="773864773" />
+										</nodeReferences>
+										<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+										<uid entityId="3105017757" />
+									</ptr>
+								</behaviours>
+								<behaviours type="animation">
+									<ptr startMode="Manual">
+										<remoteNodeLocator />
+										<uid entityId="1613490439" />
+									</ptr>
+								</behaviours>
+								<children name="Text">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="1470126377" />
+											<horizontalAnchor nrp_2="1.0" offset_1="13.0" offset_2="-25.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="3383694891" />
+											<verticalAnchor nrp_2="1.0" offset_1="18.6553" offset_2="-22.9" />
+										</ptr>
+									</behaviours>
+									<component type="label">
+										<ptr sfs="true" text="Send" textOverflowPolicy="NoBreak">
+											<curve />
+											<fontStyle>
+												<asset fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="30.0">
+													<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+													<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												</asset>
+											</fontStyle>
+											<uid entityId="2937200742" />
+										</ptr>
+									</component>
+									<transform>
+										<position x="0.5" y="7.20532" z="0.0" />
+									</transform>
+									<uid entityId="3885674173" />
+								</children>
+								<component type="image9Slice">
+									<ptr fitPolicy="Stretch" xSliceLeft="0.49" xSliceRight="0.51" ySliceLeft="0.49" ySliceRight="0.51">
+										<texture id="UI_ButtonSend" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+										<uid entityId="1755847758" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="-109.852" z="0.0" />
+								</transform>
+								<uid entityId="773864773" />
+							</children>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_Panel" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="3772648118" />
+								</ptr>
+							</component>
+							<transform>
+								<position x="742.0" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="331251375" />
+						</children>
+						<children name="Score5">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2508885242" />
+									<horizontalAnchor nrp_1="0.5" offset_1="936.0" offset_2="255.0" />
+									<normalizedPivot x="0.0" y="0.5" />
+									<uid entityId="1779000883" />
+									<verticalAnchor nrp_1="0.5" offset_1="-170.0" offset_2="340.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="simpleLayoutElement">
+								<ptr isAutoUpdatable="true">
+									<horizontalSize minSize="229.0" prefferedSize="229.0" />
+									<uid entityId="3890358029" />
+								</ptr>
+							</behaviours>
+							<children name="LabelName">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1779000883" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="1401007434" />
+										<verticalAnchor nrp_1="0.5" offset_1="123.0" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="Shawn Andersson" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#894533FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="24.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="1416590128" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="138.0" z="0.0" />
+								</transform>
+								<uid entityId="522901009" />
+							</children>
+							<children name="LabelLevel">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1779000883" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="964923920" />
+										<verticalAnchor nrp_1="0.5" offset_1="96.2499" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="57 level" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#CC603AFF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="21.0" />
+										</fontStyle>
+										<uid entityId="3979979781" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="111.25" z="0.0" />
+								</transform>
+								<uid entityId="1672763394" />
+							</children>
+							<children name="Emblem">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="1779000883" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-57.0" offset_2="114.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2074961670" />
+										<verticalAnchor nrp_1="0.5" offset_1="-45.5768" offset_2="120.0" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr fitPolicy="Stretch">
+										<spriteOrTexture id="UI_Ball" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="2409508757" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="14.4232" z="0.0" />
+								</transform>
+								<uid entityId="2023853474" />
+							</children>
+							<children name="LabelScore">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1779000883" />
+										<horizontalAnchor nrp_1="0.5" offset_1="16.5" offset_2="85.0" />
+										<normalizedPivot x="0.0" y="0.5" />
+										<uid entityId="4154478042" />
+										<verticalAnchor nrp_1="0.5" offset_1="-63.235" offset_2="55.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr align="LeftMiddle" sfs="true" text="x55" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#FEEB16FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="42.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="2406744906" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="144.0" y="-35.735" z="0.0" />
+								</transform>
+								<uid entityId="2061878918" />
+							</children>
+							<children name="Button">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1779000883" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.5" offset_2="171.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="1284375810" />
+										<verticalAnchor nrp_1="0.5" offset_1="-141.352" offset_2="63.0" />
+									</ptr>
+								</behaviours>
+								<behaviours type="button">
+									<ptr>
+										<uid entityId="4083241727" />
+									</ptr>
+								</behaviours>
+								<behaviours type="buttonStateGraph">
+									<ptr>
+										<uid entityId="2303287829" />
+									</ptr>
+								</behaviours>
+								<behaviours type="stateGraph">
+									<ptr>
+										<nodeReferences first="">
+											<second path="41818552" />
+										</nodeReferences>
+										<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+										<uid entityId="91195566" />
+									</ptr>
+								</behaviours>
+								<behaviours type="animation">
+									<ptr startMode="Manual">
+										<remoteNodeLocator />
+										<uid entityId="3915474948" />
+									</ptr>
+								</behaviours>
+								<children name="Text">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="1284375810" />
+											<horizontalAnchor nrp_2="1.0" offset_1="13.0" offset_2="-25.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="3996712263" />
+											<verticalAnchor nrp_2="1.0" offset_1="18.6553" offset_2="-22.9" />
+										</ptr>
+									</behaviours>
+									<component type="label">
+										<ptr sfs="true" text="Send" textOverflowPolicy="NoBreak">
+											<curve />
+											<fontStyle>
+												<asset fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="30.0">
+													<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+													<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												</asset>
+											</fontStyle>
+											<uid entityId="157229608" />
+										</ptr>
+									</component>
+									<transform>
+										<position x="0.5" y="7.20532" z="0.0" />
+									</transform>
+									<uid entityId="2640721556" />
+								</children>
+								<component type="image9Slice">
+									<ptr fitPolicy="Stretch" xSliceLeft="0.49" xSliceRight="0.51" ySliceLeft="0.49" ySliceRight="0.51">
+										<texture id="UI_ButtonSend" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+										<uid entityId="630064666" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="-109.852" z="0.0" />
+								</transform>
+								<uid entityId="41818552" />
+							</children>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_Panel" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="4220128609" />
+								</ptr>
+							</component>
+							<transform>
+								<position x="986.0" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="877908499" />
+						</children>
+						<children name="Score6">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2508885242" />
+									<horizontalAnchor nrp_1="0.5" offset_1="1180.0" offset_2="255.0" />
+									<normalizedPivot x="0.0" y="0.5" />
+									<uid entityId="1717082141" />
+									<verticalAnchor nrp_1="0.5" offset_1="-170.0" offset_2="340.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="simpleLayoutElement">
+								<ptr isAutoUpdatable="true">
+									<horizontalSize minSize="229.0" prefferedSize="229.0" />
+									<uid entityId="3842884133" />
+								</ptr>
+							</behaviours>
+							<children name="LabelName">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1717082141" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="1487742584" />
+										<verticalAnchor nrp_1="0.5" offset_1="123.0" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="Pilot" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#894533FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="24.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:0.35,&quot;inner&quot;:false,&quot;color&quot;:4278190080,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4294180351,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="2774919924" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="138.0" z="0.0" />
+								</transform>
+								<uid entityId="4129118189" />
+							</children>
+							<children name="LabelLevel">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1717082141" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-120.1" offset_2="223.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="692494537" />
+										<verticalAnchor nrp_1="0.5" offset_1="96.2499" offset_2="30.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr sfs="true" text="111 level" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#CC603AFF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="21.0" />
+										</fontStyle>
+										<uid entityId="784665823" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="118.9" y="111.25" z="0.0" />
+								</transform>
+								<uid entityId="3094598038" />
+							</children>
+							<children name="Emblem">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="1717082141" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-57.0" offset_2="114.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="3771847761" />
+										<verticalAnchor nrp_1="0.5" offset_1="-45.5768" offset_2="120.0" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr fitPolicy="Stretch">
+										<spriteOrTexture id="UI_Planes" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="347996547" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="14.4232" z="0.0" />
+								</transform>
+								<uid entityId="3329549529" />
+							</children>
+							<children name="LabelScore">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1717082141" />
+										<horizontalAnchor nrp_1="0.5" offset_1="16.5" offset_2="85.0" />
+										<normalizedPivot x="0.0" y="0.5" />
+										<uid entityId="237820894" />
+										<verticalAnchor nrp_1="0.5" offset_1="-63.235" offset_2="55.0" />
+									</ptr>
+								</behaviours>
+								<component type="label">
+									<ptr align="LeftMiddle" sfs="true" text="x3" textOverflowPolicy="NoBreak">
+										<curve />
+										<fontStyle>
+											<asset color="#FEEB16FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="42.0">
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:3,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4286572799,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+											</asset>
+										</fontStyle>
+										<uid entityId="1330093883" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="144.0" y="-35.735" z="0.0" />
+								</transform>
+								<uid entityId="288326775" />
+							</children>
+							<children name="Button">
+								<behaviours type="anchoredElement">
+									<ptr autoAttachToParent="true">
+										<anchorTarget path="1717082141" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.5" offset_2="171.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="1024518741" />
+										<verticalAnchor nrp_1="0.5" offset_1="-141.352" offset_2="63.0" />
+									</ptr>
+								</behaviours>
+								<behaviours type="button">
+									<ptr>
+										<uid entityId="3627836562" />
+									</ptr>
+								</behaviours>
+								<behaviours type="buttonStateGraph">
+									<ptr>
+										<uid entityId="4147833842" />
+									</ptr>
+								</behaviours>
+								<behaviours type="stateGraph">
+									<ptr>
+										<nodeReferences first="">
+											<second path="1996582658" />
+										</nodeReferences>
+										<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+										<uid entityId="1190153339" />
+									</ptr>
+								</behaviours>
+								<behaviours type="animation">
+									<ptr startMode="Manual">
+										<remoteNodeLocator />
+										<uid entityId="75223440" />
+									</ptr>
+								</behaviours>
+								<children name="Text">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="1024518741" />
+											<horizontalAnchor nrp_2="1.0" offset_1="13.0" offset_2="-25.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="2881763582" />
+											<verticalAnchor nrp_2="1.0" offset_1="18.6553" offset_2="-22.9" />
+										</ptr>
+									</behaviours>
+									<component type="label">
+										<ptr sfs="true" text="Send" textOverflowPolicy="NoBreak">
+											<curve />
+											<fontStyle>
+												<asset fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="30.0">
+													<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+													<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+												</asset>
+											</fontStyle>
+											<uid entityId="4115756635" />
+										</ptr>
+									</component>
+									<transform>
+										<position x="0.5" y="7.20532" z="0.0" />
+									</transform>
+									<uid entityId="2559435677" />
+								</children>
+								<component type="image9Slice">
+									<ptr fitPolicy="Stretch" xSliceLeft="0.49" xSliceRight="0.51" ySliceLeft="0.49" ySliceRight="0.51">
+										<texture id="UI_ButtonSend" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+										<uid entityId="4107915017" />
+									</ptr>
+								</component>
+								<transform>
+									<position x="127.5" y="-109.852" z="0.0" />
+								</transform>
+								<uid entityId="1996582658" />
+							</children>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_Panel" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="1358036084" />
+								</ptr>
+							</component>
+							<transform>
+								<position x="1230.0" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="3842468252" />
+						</children>
+						<transform>
+							<position x="-320.0" y="0.0" z="0.0" />
+						</transform>
+						<uid entityId="3865894992" />
+					</children>
+					<transform>
+						<position x="0.0" y="27.0" z="0.0" />
+					</transform>
+					<uid entityId="4018075404" />
+				</children>
+				<children name="Window">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="1779827588" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-358.0" offset_2="717.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="3685922132" />
+							<verticalAnchor nrp_1="0.5" offset_1="-261.0" offset_2="579.0" />
+						</ptr>
+					</behaviours>
+					<component type="image9Slice">
+						<ptr fitPolicy="Stretch" isInputTransparent="true" xSliceLeft="0.49" xSliceRight="0.51" ySliceLeft="0.49" ySliceRight="0.51">
+							<texture id="UI_WindowScore" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+							<uid entityId="2706655049" />
+						</ptr>
+					</component>
+					<transform>
+						<position x="0.5" y="28.5" z="0.0" />
+					</transform>
+					<uid entityId="28054069" />
+				</children>
+				<children name="Title">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="1779827588" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-183.0" offset_2="366.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="1079722088" />
+							<verticalAnchor nrp_1="0.5" offset_1="222.702" offset_2="96.0" />
+						</ptr>
+					</behaviours>
+					<children name="Label">
+						<behaviours type="anchoredElement">
+							<ptr autoAttachToParent="true">
+								<anchorTarget path="1079722088" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-179.511" offset_2="357.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="1256906344" />
+								<verticalAnchor nrp_1="0.5" offset_1="-16.5075" offset_2="48.0" />
+							</ptr>
+						</behaviours>
+						<component type="label">
+							<ptr sfs="true" text="Send Boosters!" textOverflowPolicy="NoBreak">
+								<curve />
+								<fontStyle>
+									<asset color="#AF4A19FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="36.0">
+										<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4278859927,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:2,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:true,&quot;color&quot;:4278859927,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+										<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4288348159,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4288348159,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+									</asset>
+								</fontStyle>
+								<uid entityId="3261039322" />
+							</ptr>
+						</component>
+						<transform>
+							<position x="-1.01111" y="7.49249" z="0.0" />
+						</transform>
+						<uid entityId="2119528815" />
+					</children>
+					<component type="image">
+						<ptr fitPolicy="Stretch">
+							<spriteOrTexture id="UI_WindowScoreTitle" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+							<uid entityId="300524930" />
+						</ptr>
+					</component>
+					<transform>
+						<position x="0.0" y="270.702" z="0.0" />
+					</transform>
+					<uid entityId="2451279347" />
+				</children>
+				<children name="ButtonClose">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="1779827588" />
+							<horizontalAnchor nrp_1="0.5" offset_1="296.083" offset_2="28.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="2693351951" />
+							<verticalAnchor nrp_1="0.5" offset_1="226.562" offset_2="28.0" />
+						</ptr>
+					</behaviours>
+					<behaviours type="button">
+						<ptr>
+							<uid entityId="3266947482" />
+						</ptr>
+					</behaviours>
+					<behaviours type="buttonStateGraph">
+						<ptr>
+							<uid entityId="2098563229" />
+						</ptr>
+					</behaviours>
+					<behaviours type="stateGraph">
+						<ptr>
+							<nodeReferences first="">
+								<second path="3020437796" />
+							</nodeReferences>
+							<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+							<uid entityId="4080987211" />
+						</ptr>
+					</behaviours>
+					<behaviours type="animation">
+						<ptr startMode="Manual">
+							<remoteNodeLocator />
+							<uid entityId="2426258288" />
+						</ptr>
+					</behaviours>
+					<component type="image">
+						<ptr fitPolicy="Stretch">
+							<spriteOrTexture id="UI_ButtonClose" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+							<uid entityId="342097003" />
+						</ptr>
+					</component>
+					<transform>
+						<position x="310.083" y="240.562" z="0.0" />
+					</transform>
+					<uid entityId="3020437796" />
+				</children>
+				<children name="ButtonSendAll">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="1779827588" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-147.5" offset_2="295.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="2613583502" />
+							<verticalAnchor nrp_1="0.5" offset_1="-260.358" offset_2="83.0" />
+						</ptr>
+					</behaviours>
+					<behaviours type="button">
+						<ptr>
+							<uid entityId="1017491502" />
+						</ptr>
+					</behaviours>
+					<behaviours type="buttonStateGraph">
+						<ptr>
+							<uid entityId="774046559" />
+						</ptr>
+					</behaviours>
+					<behaviours type="stateGraph">
+						<ptr>
+							<nodeReferences first="">
+								<second path="1187617437" />
+							</nodeReferences>
+							<stateGraph id="UI_ASGButtonPress" id..editor..ref="assetType@stateGraph; raw@true" />
+							<uid entityId="3366982619" />
+						</ptr>
+					</behaviours>
+					<behaviours type="animation">
+						<ptr startMode="Manual">
+							<remoteNodeLocator />
+							<uid entityId="1493305413" />
+						</ptr>
+					</behaviours>
+					<children name="Text">
+						<behaviours type="anchoredElement">
+							<ptr autoAttachToParent="true">
+								<anchorTarget path="2613583502" />
+								<horizontalAnchor nrp_1="0.05" nrp_2="0.9" offset_1="4.663" offset_2="-8.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="3240472122" />
+								<verticalAnchor nrp_1="0.16" nrp_2="0.61" offset_1="6.38337" offset_2="4.0" />
+							</ptr>
+						</behaviours>
+						<component type="label">
+							<ptr sfs="true" text="Send All" textOverflowPolicy="NoBreak">
+								<curve />
+								<fontStyle>
+									<asset color="#FFF7E1FF" fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="38.0">
+										<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+										<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:270.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279070720,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+									</asset>
+								</fontStyle>
+								<uid entityId="1400269691" />
+							</ptr>
+						</component>
+						<transform>
+							<position x="0.662964" y="5.47836" z="0.0" />
+						</transform>
+						<uid entityId="2929439914" />
+					</children>
+					<component type="image9Slice">
+						<ptr fitPolicy="Stretch" xSliceLeft="0.15" xSliceRight="0.85" ySliceLeft="0.15" ySliceRight="0.85">
+							<texture id="UI_ButtonSendAll" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+							<uid entityId="1872739191" />
+						</ptr>
+					</component>
+					<transform>
+						<position x="0.0" y="-218.858" z="0.0" />
+					</transform>
+					<uid entityId="1187617437" />
+				</children>
+				<children name="ProgressBar">
+					<behaviours type="anchoredElement">
+						<ptr>
+							<anchorTarget path="1779827588" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-115.5" offset_2="231.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="2736710932" />
+							<verticalAnchor nrp_1="0.5" offset_1="-173.023" offset_2="48.0" />
+						</ptr>
+					</behaviours>
+					<children name="ProgressLine">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="2736710932" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-105.912" offset_2="76.0" />
+								<normalizedPivot x="0.0" y="0.5" />
+								<uid entityId="863140461" />
+								<verticalAnchor nrp_1="0.5" offset_1="-14.033" offset_2="30.0" />
+							</ptr>
+						</behaviours>
+						<behaviours type="progressBar">
+							<ptr progress="0.25" speed="0.1">
+								<uid entityId="832210047" />
+							</ptr>
+						</behaviours>
+						<behaviours type="animationProgressBar">
+							<ptr id="UI_ButtonIdle" id..editor..ref="assetType@animationClip; raw@true" progress="1.0" speed="0.01">
+								<uid entityId="3773698944" />
+							</ptr>
+						</behaviours>
+						<behaviours type="animation">
+							<ptr>
+								<remoteNodeLocator />
+								<uid entityId="1703491472" />
+							</ptr>
+						</behaviours>
+						<behaviours type="stateGraph">
+							<ptr>
+								<nodeReferences first="">
+									<second path="1067510749" />
+								</nodeReferences>
+								<uid entityId="4076439206" />
+							</ptr>
+						</behaviours>
+						<component type="image9Slice">
+							<ptr fitPolicy="Stretch" xSliceLeft="0.2" xSliceRight="0.8" ySliceLeft="0.49" ySliceRight="0.51">
+								<texture id="UI_ProgressLine" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+								<uid entityId="2927549266" />
+							</ptr>
+						</component>
+						<transform>
+							<position x="-105.912" y="0.967" z="0.0" />
+						</transform>
+						<uid entityId="1067510749" />
+					</children>
+					<children name="LabelProgress">
+						<behaviours type="anchoredElement">
+							<ptr autoAttachToParent="true">
+								<anchorTarget path="2736710932" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-44.0745" offset_2="84.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="2095525405" />
+								<verticalAnchor nrp_1="0.5" offset_1="-14.2155" offset_2="35.0" />
+							</ptr>
+						</behaviours>
+						<component type="label">
+							<ptr sfs="true" text="3/8" textOverflowPolicy="NoBreak">
+								<curve />
+								<fontStyle>
+									<asset fontName="Poetsen One" fontName..editor..ref="assetType@FontFile; raw@true" size="27.0">
+										<effects effectString="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" inspectorEffectString..editor="{&quot;blurX&quot;:0,&quot;blurY&quot;:0,&quot;offset&quot;:1,&quot;angle&quot;:90.0,&quot;strength&quot;:1.0,&quot;inner&quot;:false,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;shadow&quot;}" />
+										<effects effectString="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" inspectorEffectString..editor="{&quot;strokeTop&quot;:1,&quot;strokeBottom&quot;:1,&quot;strokeLeft&quot;:1,&quot;strokeRight&quot;:1,&quot;color&quot;:4279716014,&quot;alpha&quot;:1.0,&quot;type&quot;:&quot;stroke&quot;}" />
+									</asset>
+								</fontStyle>
+								<uid entityId="4071121375" />
+							</ptr>
+						</component>
+						<transform>
+							<position x="-2.07446" y="3.28448" z="0.0" />
+						</transform>
+						<uid entityId="855612503" />
+					</children>
+					<component type="image">
+						<ptr fitPolicy="Stretch">
+							<spriteOrTexture id="UI_ProgressBar" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+							<uid entityId="3296699184" />
+						</ptr>
+					</component>
+					<transform>
+						<position x="0.0" y="-149.023" z="0.0" />
+					</transform>
+					<uid entityId="2638795162" />
+				</children>
+				<transform>
+					<position x="667.5" y="346.222" z="0.0" />
+				</transform>
+				<uid entityId="549763911" />
+			</children>
+			<sorting type="priority">
+				<ptr relativePriority="1">
+					<uid entityId="292421757" />
+				</ptr>
+			</sorting>
+			<transform />
+			<uid entityId="2753843415" />
+		</root>
+		<transform>
+			<position x="512.0" y="384.0" z="-0.500023" />
+		</transform>
+	</object>
+	<settings type="sceneInfoSettings">
+		<ptr />
+	</settings>
+	<settings type="vsoupSceneSettings">
+		<ptr />
+	</settings>
+	<settings type="scenePriorities">
+		<ptr>
+			<priorities name="Default" />
+		</ptr>
+	</settings>
+</asset>

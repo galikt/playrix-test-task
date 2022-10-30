@@ -34,4 +34,38 @@
 			<textureType local="true" value="Texture2D" />
 		</textureSettings>
 	</asset>
+	<asset assetId="BKq3jzmugROM" assetType="textureAsset" path="test_window/Textures/UI_ButtonSendAll.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_ButtonSendAll" />
+		<textureSettings>
+			<textureType local="true" value="Texture2D" />
+		</textureSettings>
+	</asset>
+	<asset assetId="I5p0VgMkdUwO" assetType="textureAsset" path="test_window/Textures/UI_WindowScore.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_WindowScore" />
+		<textureSettings>
+			<textureType local="true" value="Texture2D" />
+		</textureSettings>
+	</asset>
+	<asset assetId="KKp1dFRok3uG" assetType="textureAsset" path="test_window/Textures/UI_WindowScoreTitle.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_WindowScoreTitle" />
+	</asset>
+	<asset assetId="O1r4W2BQQh44" assetType="textureAsset" path="test_window/Textures/UI_Panel.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_Panel" />
+		<textureSettings>
+			<textureType local="true" value="Texture2D" />
+		</textureSettings>
+	</asset>
+	<asset assetId="cWC3CvaKQG0s" assetType="textureAsset" path="test_window/Textures/UI_ProgressBar.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_ProgressBar" />
+	</asset>
 </assets>

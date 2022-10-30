@@ -1,2 +1,52 @@
 <?xml version="1.0"?>
-<assets />
+<assets>
+	<asset assetId="5n83vbFLOKr1" assetType="textureAsset" path="test_window/Textures/UI_ButtonSend.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_ButtonSend" />
+		<textureSettings>
+			<textureType local="true" value="Texture2D" />
+		</textureSettings>
+	</asset>
+	<asset assetId="CEC2J9m8OuR7" assetType="textureAsset" path="test_window/Textures/UI_ProgressLine.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_ProgressLine" />
+		<textureSettings>
+			<textureType local="true" value="Texture2D" />
+		</textureSettings>
+	</asset>
+	<asset assetId="NW50L08CbqSa" assetType="textureAsset" path="test_window/Textures/UI_WindowBackground.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_WindowBackground" />
+	</asset>
+	<asset assetId="gm808FXuC1Eo" assetType="textureAsset" path="test_window/Textures/UI_Ball.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_Ball" />
+	</asset>
+	<asset assetId="hzp2xsvQheiD" assetType="textureAsset" path="test_window/Textures/UI_ButtonClose.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_ButtonClose" />
+		<textureSettings>
+			<textureType local="true" value="Texture2D" />
+		</textureSettings>
+	</asset>
+	<asset assetId="jsB0HCOEvfS3" assetType="textureAsset" path="test_window/Textures/UI_ScoreBackground.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_ScoreBackground" />
+	</asset>
+	<asset assetId="nm81kVcy3aLx" assetType="textureAsset" path="test_window/Textures/UI_Hammer.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_Hammer" />
+	</asset>
+	<asset assetId="rm82duXYbvT9" assetType="textureAsset" path="test_window/Textures/UI_Planes.png">
+		<!--vso: 2-->
+		<group value="test_window" />
+		<id value="UI_Planes" />
+	</asset>
+</assets>
